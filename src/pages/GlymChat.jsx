@@ -1,8 +1,14 @@
 import React from 'react'
+import Sidebar from '@/components/major-components/Sidebar'
 
 const GlymChat = () => {
   return (
-    <div>GlymChat</div>
+    <div className="flex">
+      <Sidebar />
+      <div className="ml-[5%]">
+        GlymChat
+      </div>
+    </div>
   )
 }
 

@@ -1,8 +1,14 @@
 import React from 'react'
+import Sidebar from '@/components/major-components/Sidebar'
 
 const Surveys = () => {
   return (
-    <div>Surveys</div>
+    <div className="flex">
+      <Sidebar />
+      <div className="ml-[5%]">
+        Survey
+      </div>
+    </div>
   )
 }
 

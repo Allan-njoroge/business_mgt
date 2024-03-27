@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { IoMdClose } from "react-icons/io";
-import { MdDashboard, MdOutlineInventory2, MdOutlineMenu } from "react-icons/md";
+import { IoMdClose, IoIosMoon } from "react-icons/io";
+import { MdDashboard, MdOutlineInventory2, MdOutlineMenu, MdSunny  } from "react-icons/md";
 import { SiChatbot } from "react-icons/si";
 import { LiaFileInvoiceDollarSolid } from "react-icons/lia";
 import { RiSurveyLine } from "react-icons/ri";
@@ -16,7 +16,7 @@ const Sidebar = () => {
         }, {
             icon: LiaFileInvoiceDollarSolid,
             title: "Invoices",
-            link: "/invoive",
+            link: "/invoice",
         }, {
             icon: MdOutlineInventory2,
             title: "Inventory",
@@ -28,7 +28,7 @@ const Sidebar = () => {
         }, {
             icon: SiChatbot,
             title: "Chatbot",
-            link: "/chatbot",
+            link: "/glymchat",
         }, 
     ]
 
@@ -56,6 +56,16 @@ const Sidebar = () => {
         )
     })
 
+    //Toggle dark and lightmode
+    const [mode, setMode] = useState(false);
+
+    const lightMode = () => {
+        setMode(false);
+    }
+    const darkMode = () => {
+        setMode(true)
+    }
+
   return (
     <div className={`h-[100%] bg-blue-500 text-white fixed top-0 left-0 z-10 transition-all ease-in-out duration-300
     ${menuOpen ? 'w-2/3 lg:w-1/4': 'w-[12%] lg:w-[5%]'}`}>
@@ -69,6 +79,10 @@ const Sidebar = () => {
             </div>
 
             <ul className="mx-auto pt-10 border-t-2 border-gray-500/50 ">{dashLinks}</ul>
+
+            <div>
+
+            </div>
         </div>
     </div>
   )
