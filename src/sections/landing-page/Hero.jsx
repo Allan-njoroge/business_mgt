@@ -15,7 +15,7 @@ const Hero = () => {
                 </p>
                 <div className="flex gap-5">
                     <Link to={`/sign-up/`} className="hidden lg:block"><Button>Get Started</Button></Link>
-                    <Link to={`/home`} className="hidden lg:block"><Button>Demo</Button></Link>
+                    <Link to={`/dashboard`} className="hidden lg:block"><Button>Demo</Button></Link>
                 </div>
             </div>
 
