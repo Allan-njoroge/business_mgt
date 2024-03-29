@@ -37,7 +37,7 @@ const Cards = () => {
     const card = cardDetails.map((item, id) => {
         const Icon = item.icon
         return(
-            <Card key={id} className="w-[30%] bg-blue-500 text-white hover:scale-105 transition-all ease-in duration-300">
+            <Card key={id} className="mx-auto w-full md:w-[70%] lg:w-[30%] bg-blue-500 text-white hover:scale-105 transition-all ease-in duration-300">
                 <CardHeader>
                     <CardTitle className="flex gap-2 text-xl"> <Icon className="my-auto" /> {item.title}</CardTitle>
                 </CardHeader>
@@ -50,7 +50,7 @@ const Cards = () => {
     })
 
   return (
-    <div className="w-full flex justify-between gap-10">{card}</div>
+    <div className="w-full grid md:flex justify-between gap-10">{card}</div>
   )
 }
 
