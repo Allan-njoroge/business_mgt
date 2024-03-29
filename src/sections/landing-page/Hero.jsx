@@ -24,8 +24,8 @@ const Hero = () => {
                 <img src={ HeroImage } alt="" className="w-[90%] lg:w-[600px] rounded-md mx-auto align-center" />
             </div>
             <div className="flex justify-center gap-5">
-                <Link className="lg:hidden"><Button>Get Started</Button></Link>
-                <Link className="lg:hidden"><Button>Demo</Button></Link>
+                <Link to={`/sign-up/`} className="lg:hidden"><Button>Get Started</Button></Link>
+                <Link to={`/dashboard`} className="lg:hidden"><Button>Demo</Button></Link>
             </div>
         </div>
     </div>
